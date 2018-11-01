@@ -25,10 +25,24 @@ header{
     text-align: center;
     display: block;
 }
+#heading{
+    margin: 30px 0;
+}
+h1{
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
 h2{
     font-size: 3.6rem;
     line-height: 1.25;
     letter-spacing: -.1rem;
+}
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -.08rem;
 }
 h1,h2,h3,h4,h5,h6{
     margin-top: 0;
@@ -53,7 +67,7 @@ div {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.container::after, .row::after {
+.container:after, .row:after {
     content: "";
     display: table;
     clear: both;
@@ -65,9 +79,9 @@ div {
     box-sizing: border-box;
 }
 
-@media (min-width: 550px){
+@media screen and  (min-width: 550px){
 .four.columns {
-  width: 30.6666666667;  
+  width: 30.6666666667%;  
 }
 .column:first-child,
 .columns:first-child {
@@ -79,15 +93,27 @@ div {
 h2{
     font-size: 4.2rem;
 }
+h1{
+    font-size: 5.0rem;
 }
-@media (min-width: 750px){
+h4{
+    font-size: 3.0rem;
+}
+}
+@media screen and (min-width: 750px){
     header {
         text-align: left;
     }
+    .icon{
+        margin-bottom: 0;
+    }
 }
-@media (min-width: 550px){
+@media screen and (min-width: 550px){
     .two.columns{
         width: 13.333333333%;
+    }
+    .card{
+        text-align: left;
     }
 }
 .u-pull-right{
@@ -122,7 +148,7 @@ li{
     background-size: cover;
 }
 
-@media(min-width: 550px){
+@media screen and (min-width: 550px){
     .container{
         width: 80%;
     }
@@ -134,7 +160,7 @@ li{
         margin-left: 0;
     }
 }
-@media (min-width:440px){
+@media screen and (min-width:440px){
     .container{
         width: 85%;
         padding: 0;
@@ -147,4 +173,155 @@ li{
 .hero-content form{
     position: relative;
     margin-bottom: 0;
+}
+
+input[type="text"]{
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input{
+    line-height: normal;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.u-full-width{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.hero-content form .submit-search-course{
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/mglass.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+input[type="submit"]{
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.main-bar{
+    padding: 20px 0;
+    background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+}
+
+.icon{
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.icon1{
+    background-image: url(../img/icon1.png);
+
+}
+.icon2{
+    background-image: url(../img/icon2.png);
+
+}
+.icon3{
+    background-image: url(../img/icon3.png);
+
+}
+.main-bar p{
+    margin: 0;
+    color: white;
+}
+.card{
+    text-align: center;
+    border: 1px solid #e1e1e1;
+}
+.info-card{
+    padding: 10px 20px;
+}
+
+.info-card p, .card h4 {
+    margin-bottom: 5px;
+}
+.info-card .price{
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .price span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.button.button-primary{
+    color:#FFF;
+    background-color: #33C3F0;
+    border-color:#33C3F0;
+}
+.add-to-cart{
+    margin: 10px 0;
+}
+
+.button{
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+
+#courses-list .row{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.footer{
+    margin-top: 40px;
+    border-top: 1px solid #aaa;
+    padding-top: 40px;
+}
+nav{
+    display: block;
+}
+.footer .menu a{
+    display: block;
+    margin-bottom: 10x;
+    text-decoration: none;
+}
+a{
+    color: #1EAEDB;
+    background-color: transparent;
 }
